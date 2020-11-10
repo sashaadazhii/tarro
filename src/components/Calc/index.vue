@@ -65,6 +65,25 @@
         >
       </div>
     </div>
+    <div class="form-block">
+      <div class="icon-wrapper">
+        <img src="../../assets/images/icon-magestic3.png" alt="magestic" />
+      </div>
+      <h5 class="form-title">
+        В упражнении был фрагмент из моей книги
+        <strong>«Нумерология по Таро 2.0»</strong>
+      </h5>
+      <div class="content content--form">
+        <strong
+          >Подписавшись на рассылку, вы получите в подарок книгу
+          целиком.</strong
+        >
+        С помощью нее вы сможете узнать о себе намного больше! В этой рассылке
+        вы получите серию фрагментов записей уроков одной из школ. Записи моих
+        вебинаров доступны только подписчикам ASASproject:
+      </div>
+      <TheForm />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -72,6 +91,8 @@
 </style>
 <script>
 import { numbers } from "@/assets/js/calc.js";
+import TheForm from "@/components/TheForm";
+
 export default {
   data: () => ({
     numbers: numbers,
@@ -81,6 +102,7 @@ export default {
     year: Number,
     calc: false
   }),
+  components: { TheForm },
   methods: {
     getSum() {
       this.calc = true;

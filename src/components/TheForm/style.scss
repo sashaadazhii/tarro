@@ -3,13 +3,19 @@
 
 .form-wrapper {
   padding: 48px;
-  margin: 0 auto 70px;
+  margin: 0 auto;
   width: 716px;
   max-width: 100%;
 
   @include mobile {
     padding: 20px;
   }
+}
+
+.form-border {
+  border: 1px dashed $color-light;
+  border-radius: 36px;
+  margin-bottom: 70px;
 }
 
 .form {
@@ -47,7 +53,7 @@
 }
 
 .content {
-  padding: 24px 0;
+  padding: 24px 0 0;
   @include font($font-primary, 20px, $color-accent, 400);
   line-height: 29px;
   text-align: center;

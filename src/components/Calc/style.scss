@@ -10,6 +10,11 @@
   line-height: 140%;
 }
 
+.form-title {
+  @include font($font-primary, 36px, $color-accent, 500);
+  line-height: 140%;
+}
+
 .form {
   display: flex;
   flex-flow: row wrap;
@@ -60,10 +65,33 @@
   margin-bottom: 64px;
   @include font($font-primary, 24px, $color-dark, 400);
   line-height: 170%;
+
+  &--form {
+    color: $color-accent;
+  }
 }
 
 .output {
   margin: 64px 0;
   @include font($font-primary, 36px, $color-dark, 500);
   line-height: 150%;
+}
+
+.form-block {
+  padding: 48px;
+  margin: 0px 64px;
+  background: $color-dark;
+  border-radius: 36px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icon-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
 }

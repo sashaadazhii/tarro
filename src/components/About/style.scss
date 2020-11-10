@@ -1,0 +1,53 @@
+@import 'src/assets/styles/_variables.scss';
+@import 'src/assets/styles/_mixin.scss';
+
+.photo-block {
+  width: 100%;
+  min-height: 700px;
+  // padding: 70px 0;
+  background: linear-gradient(180deg, rgba(31, 22, 10, 0) 0%, #1f160a 100%),
+    url(../../assets/images/magestic-author.jpg), #1f160a;
+  background-size: cover;
+  // background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  display: flex;
+  // flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    padding: 12px 0;
+    text-align: left;
+  }
+}
+
+.subtitle {
+  @include font($font-primary, 36px, $color-accent, 500);
+  line-height: 170%;
+}
+
+.list {
+  &__item {
+    padding-top: 36px;
+    @include font($font-primary, 20px, $color-accent, 400);
+    line-height: 170%;
+  }
+
+  &__emp {
+    color: $color-light;
+    font-weight: 600;
+  }
+}
+
+.icon-wrapper {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}

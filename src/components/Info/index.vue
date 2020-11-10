@@ -1,5 +1,5 @@
 <template>
-  <section class="dark">
+  <section>
     <div class="container container--narrow">
       <Divider src="icon-magestic6.png" />
 

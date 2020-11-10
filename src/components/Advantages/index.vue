@@ -1,5 +1,5 @@
 <template>
-  <section class="dark">
+  <section>
     <div class="container">
       <ul class="advantages">
         <li class="advantages__item">
