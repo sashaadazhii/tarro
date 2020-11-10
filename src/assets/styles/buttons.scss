@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'mixin';
+
+.btn {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 90px;
+  // height: 90px;
+  // margin-left: 20px;
+  // @include font(60px, $color-dark, 400);
+  // border-radius: 20px;
+  // border: 1px solid $color-medium;
+  // color: $color-dark;
+  // background: #fff;
+  // cursor: pointer;
+  // transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:active {
+  }
+}
