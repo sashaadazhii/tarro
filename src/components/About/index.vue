@@ -87,6 +87,24 @@
           >
         </li>
       </ul>
+
+      <div class="signature">
+        <div class="signature__img">
+          <img src="../../assets/images/signature.png" alt="magestic" />
+        </div>
+        <div class="signature__info">
+          <div class="signature__title">Витторио Маджестик</div>
+          <div class="signature__desc">
+            Ваш проводник в Энерго-Информационный мир
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-for="pr in program" :key="pr.title">
+      <!-- <p v-html="pr.result.list"></p> -->
+      <ul>
+        <li v-for="i in pr.result.list" :key="i">{{ i }}</li>
+      </ul>
     </div>
   </section>
 </template>
@@ -94,3 +112,12 @@
 <style lang="scss" scoped>
 @import "./style.scss";
 </style>
+
+<script>
+import { program } from "@/assets/js/program.js";
+export default {
+  data: () => ({
+    program: program
+  })
+};
+</script>

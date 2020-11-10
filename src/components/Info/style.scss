@@ -16,6 +16,7 @@
 
   &__content {
     padding: 24px 36px;
+    margin-top: 30px;
     @include font($font-primary, 36px, $color-accent, 600);
     line-height: 140%;
     border: 2px solid #f6c37d;

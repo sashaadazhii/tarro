@@ -1,6 +1,12 @@
 @import 'src/assets/styles/_variables.scss';
 @import 'src/assets/styles/_mixin.scss';
 
+.about {
+  .container {
+    transform: translateY(-280px);
+  }
+}
+
 .photo-block {
   width: 100%;
   min-height: 700px;
@@ -49,5 +55,30 @@
 
   img {
     width: 100%;
+  }
+}
+
+.signature {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 734px;
+  max-width: 100%;
+  padding: 24px 33px;
+  margin: 48px 0 80px;
+  background-color: $color-light;
+  border-radius: 24px;
+
+  &__title {
+    // padding-top: 36px;
+    @include font($font-primary, 24px, $color-dark, 700);
+    line-height: 170%;
+  }
+
+  &__desc {
+    // padding-top: 36px;
+    @include font($font-primary, 20px, $color-dark, 500);
+    line-height: 170%;
   }
 }
