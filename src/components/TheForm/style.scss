@@ -1,2 +1,54 @@
 @import 'src/assets/styles/_variables.scss';
 @import 'src/assets/styles/_mixin.scss';
+
+.form-wrapper {
+  padding: 48px;
+  margin: 0 auto 70px;
+  width: 716px;
+  max-width: 100%;
+
+  @include mobile {
+    padding: 20px;
+  }
+}
+
+.form {
+  .input {
+    width: 100%;
+    padding: 30px 48px;
+    margin-bottom: 36px;
+    border: 2px solid #aa7e52;
+    border-radius: 36px;
+    background: transparent;
+    outline: none;
+    @include font($font-primary, 24px, $color-accent, 600);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:active,
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
+
+    &:focus {
+      color: $color-light;
+    }
+
+    &::placeholder {
+      @include font($font-primary, 24px, $color-accent, 600);
+    }
+
+    &--btn {
+      background-color: $color-light;
+      color: $color-dark;
+    }
+  }
+}
+
+.content {
+  padding: 24px 0;
+  @include font($font-primary, 20px, $color-accent, 400);
+  line-height: 29px;
+  text-align: center;
+}
