@@ -20,8 +20,8 @@
         </div>
       </div>
     </section>
-  </header></template
->
+  </header>
+</template>
 <style lang="scss" scoped>
 @import "./style.scss";
 </style>

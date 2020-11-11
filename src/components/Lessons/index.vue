@@ -99,44 +99,4 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "./style.scss";
-
-.vsa-item {
-  &--is-active {
-    .vsa-item__trigger__icon {
-      .open {
-        display: none;
-      }
-
-      .close {
-        display: block;
-      }
-    }
-  }
-  &__trigger__icon {
-    .open {
-      display: block;
-    }
-
-    .close {
-      display: none;
-    }
-  }
-}
-
-.vsa-item {
-  margin: 24px 0;
-  border-radius: 24px !important;
-}
-.vsa-item__trigger__content p {
-  font-weight: 500 !important;
-}
-.vsa-item__trigger__content p strong {
-  padding-left: 10px !important;
-}
-.vsa-item__content ul {
-  font-weight: 500 !important;
-}
-.vsa-item__content > * {
-  margin: 20px 0;
-}
 </style>
