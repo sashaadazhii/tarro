@@ -2,11 +2,15 @@
   <section class="light">
     <div class="container container--narrow">
       <div class="icon-wrapper">
-        <img src="../../assets/images/icon-magestic4.png" alt="magestic" />
+        <img
+          src="../../assets/icons/icon-magestic4.svg"
+          onerror="../../assets/images/icon-magestic4.png"
+          alt="magestic"
+        />
       </div>
-      <h1 class="title">
+      <h2 class="title">
         Что вы получите и чему научитесь в школе «Нумерология по Таро 3.0»
-      </h1>
+      </h2>
 
       <div class="accordion">
         <vsa-list>
@@ -27,7 +31,7 @@
         </vsa-list>
       </div>
 
-      <Divider src="icon-magestic2.png" />
+      <Divider src="icon-magestic2.svg" />
     </div>
   </section>
 </template>

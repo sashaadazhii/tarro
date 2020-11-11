@@ -67,7 +67,11 @@
     </div>
     <div class="form-block">
       <div class="icon-wrapper">
-        <img src="../../assets/images/icon-magestic3.png" alt="magestic" />
+        <img
+          src="../../assets/icons/icon-magestic3.svg"
+          alt="magestic"
+          onerror="../../assets/images/icon-magestic3.png"
+        />
       </div>
       <h5 class="form-title">
         В упражнении был фрагмент из моей книги

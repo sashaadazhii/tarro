@@ -3,7 +3,11 @@
     <section class="dark header">
       <div class="container">
         <div class="icon-wrapper">
-          <img src="../../assets/images/icon-header.png" alt="magestic" />
+          <img
+            src="../../assets/icons/icon-header.svg"
+            onerror="../../assets/images/icon-header.png"
+            alt="magestic"
+          />
         </div>
         <h1 class="title title--light">Школа «Нумерология по таро 3.0»</h1>
         <div class="content">

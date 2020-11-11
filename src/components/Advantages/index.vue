@@ -5,7 +5,8 @@
         <li class="advantages__item">
           <div class="advantages__icon">
             <img
-              src="../../assets/images/magestic-year.png"
+              src="../../assets/icons/magestic-year.svg"
+              onerror="../../assets/images/magestic-year.png"
               class="advantages__img"
               alt="magestic advantages"
             />
@@ -17,7 +18,8 @@
         <li class="advantages__item">
           <div class="advantages__icon">
             <img
-              src="../../assets/images/magestic-expir.png"
+              src="../../assets/icons/magestic-expir.svg"
+              onerror="../../assets/images/magestic-expir.png"
               class="advantages__img"
               alt="magestic advantages"
             />
@@ -28,7 +30,8 @@
         <li class="advantages__item">
           <div class="advantages__icon">
             <img
-              src="../../assets/images/magestic-studets.png"
+              src="../../assets/icons/magestic-studets.svg"
+              onerror="../../assets/images/magestic-studets.png"
               class="advantages__img"
               alt="magestic advantages"
             />

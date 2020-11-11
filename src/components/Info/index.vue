@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container container--narrow">
-      <Divider src="icon-magestic6.png" />
+      <Divider src="icon-magestic6.svg" />
 
       <div class="block">
         <h3 class="block__content ">
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <Divider src="icon-magestic6.png" />
+      <Divider src="icon-magestic6.svg" />
 
       <div class="block--small">
         <div class="block--small__content">

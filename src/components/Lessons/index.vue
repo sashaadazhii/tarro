@@ -1,18 +1,10 @@
 <template>
   <section class="light">
     <div class="container container--narrow">
-      <h2 class="title">Программа школы</h2>
-      <div class="icon-wrapper">
-        <img
-          src="../../assets/icons/dots.svg"
-          onerror="../../assets/icons/dots.png'"
-          alt="magestic"
-        />
-      </div>
-      <div class="subtitle">Подготовительные занятия</div>
+      <div class="subtitle">Основные занятия</div>
       <div class="accordion">
         <vsa-list>
-          <vsa-item v-for="(item, idx) in program" :key="idx">
+          <vsa-item v-for="(item, idx) in lessons" :key="idx">
             <vsa-heading>
               <p v-html="item.title"></p>
             </vsa-heading>
@@ -33,9 +25,9 @@
                 </li>
               </ul>
 
-              <div v-if="item.result.practice" class="editional">
+              <div v-if="item.result.practice.title" class="editional">
                 <span class="editional__title">
-                  {{ item.result.practice.title }}:
+                  {{ item.result.practice.title }}
                 </span>
                 <span class="editional__content">{{
                   item.result.practice.content
@@ -43,7 +35,7 @@
               </div>
 
               <div v-if="item.result.homework" class="homework">
-                <p class="homework__title">{{ item.result.homework.title }}:</p>
+                <p class="homework__title">{{ item.result.homework.title }}</p>
                 <ul class="list">
                   <li
                     class="list__item"
@@ -56,17 +48,25 @@
                 </ul>
               </div>
 
-              <div v-if="item.result.bonus" class="editional">
-                <span class="editional__title"
-                  >{{ item.result.bonus.title }}:</span
-                >
+              <div v-if="item.result.bonus.title" class="editional">
+                <span class="editional__title">{{
+                  item.result.bonus.title
+                }}</span>
                 <span class="editional__content">
                   {{ item.result.bonus.content }}</span
                 >
               </div>
+              <div v-else class="empty"></div>
             </vsa-content>
           </vsa-item>
         </vsa-list>
+      </div>
+      <div class="btn-wrapper">
+        <div class="left"></div>
+        <a href="#" class="btn"
+          >Стать учеником школы Нумерология по таро 3.0
+        </a>
+        <div class="right"></div>
       </div>
     </div>
   </section>
@@ -80,11 +80,13 @@ import {
   VsaIcon
 } from "vue-simple-accordion";
 import "vue-simple-accordion/dist/vue-simple-accordion.css";
-import { program } from "@/assets/js/program.js";
+import { lessons } from "@/assets/js/lessons.js";
+
 export default {
   data: () => ({
-    program: program,
-    counter: 0
+    lessons: lessons,
+    counter: 0,
+    btnText: String
   }),
   components: {
     VsaItem,

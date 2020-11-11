@@ -2,9 +2,13 @@
   <section class="light">
     <div class="container container--narrow">
       <div class="icon-wrapper">
-        <img src="../../assets/images/icon-magestic1.png" alt="magestic" />
+        <img
+          src="../../assets/icons/icon-magestic1.svg"
+          onerror="../../assets/images/icon-magestic1.png"
+          alt="magestic"
+        />
       </div>
-      <h1 class="title">Познавательное упражнение!</h1>
+      <h2 class="title">Познавательное упражнение!</h2>
       <div class="content">
         Всего 3 минуты, и вы узнаете, какая у вас Душа, какой вы настоящий и
         глубинный человек. Познакомитесь со своим Внутренним ребенком, который
@@ -41,7 +45,11 @@
 
       <div class="example-block">
         <div class="icon-wrapper">
-          <img src="../../assets/images/dots-dark.png" alt="magestic" />
+          <img
+            src="../../assets/icons/dots-dark.svg"
+            onerror="../../assets/images/dots-dark.png"
+            alt="magestic"
+          />
         </div>
         <div class="example">
           <h5 class="example__title">Расчет числа Сущности</h5>
@@ -65,7 +73,7 @@
           </div>
         </div>
       </div>
-      <Divider src="icon-magestic2.png" />
+      <Divider src="icon-magestic2.svg" />
     </div>
     <Calc />
   </section>

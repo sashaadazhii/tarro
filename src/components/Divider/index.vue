@@ -2,7 +2,7 @@
   <div class="divider">
     <div class="divider__icon">
       <img
-        :src="require(`../../assets/images/${src}`)"
+        :src="require(`../../assets/icons/${src}`)"
         alt="magestic icon"
         class="divider__img"
       />
@@ -18,7 +18,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: "icon-magestic6.png"
+      default: "icon-magestic6.svg"
     }
   }
 };

@@ -3,7 +3,7 @@
     <!-- <div class="container"> -->
     <TheHeader /> <Advantages /><Info /><Gifts />
     <TheForm class="form-border" /><Exercise /> <About /><Learning />
-    <Program />
+    <Program /> <Lessons />
     <!-- </div> -->
   </div>
 </template>
@@ -17,8 +17,8 @@ import TheForm from "@/components/TheForm";
 import Exercise from "@/components/Exercise";
 import About from "@/components/About";
 import Learning from "@/components/Learning";
-
 import Program from "@/components/Program";
+import Lessons from "@/components/Lessons";
 
 export default {
   name: "Home",
@@ -31,7 +31,8 @@ export default {
     Exercise,
     About,
     Learning,
-    Program
+    Program,
+    Lessons
   }
 };
 </script>

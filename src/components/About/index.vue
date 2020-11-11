@@ -13,7 +13,11 @@
           </div>
         </div>
         <div class="icon-wrapper">
-          <img src="../../assets/images/cards.png" alt="magestic" />
+          <img
+            src="../../assets/icons/cards.svg"
+            onerror="../../assets/images/cards.png"
+            alt="magestic"
+          />
         </div>
       </div>
 
