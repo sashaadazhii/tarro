@@ -100,24 +100,9 @@
         </div>
       </div>
     </div>
-    <div v-for="pr in program" :key="pr.title">
-      <!-- <p v-html="pr.result.list"></p> -->
-      <ul>
-        <li v-for="i in pr.result.list" :key="i">{{ i }}</li>
-      </ul>
-    </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
 @import "./style.scss";
 </style>
-
-<script>
-import { program } from "@/assets/js/program.js";
-export default {
-  data: () => ({
-    program: program
-  })
-};
-</script>
